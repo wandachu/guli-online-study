@@ -1,0 +1,20 @@
+#port
+server.port=8003
+
+#application name for spring cloud
+spring.application.name=service-vod
+
+#profiles: dev, test, prod
+spring.profiles.active=dev
+
+#Aliyun vod config
+aliyun.vod.file.keyid=
+aliyun.vod.file.keysecret=
+
+#Set maximum size of a single multipart file. Default is 1M
+spring.servlet.multipart.max-file-size=1024MB
+#Set maximum size of total multipart files. Default is 10M
+spring.servlet.multipart.max-request-size=1024MB
+
+# nacos address
+spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848

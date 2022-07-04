@@ -1,0 +1,17 @@
+#port
+server.port=8002
+
+#application name for spring cloud
+spring.application.name=service-oss
+
+#profiles: dev, test, prod
+spring.profiles.active=dev
+
+#Aliyun oss config
+aliyun.oss.file.endpoint=oss-us-west-1.aliyuncs.com
+aliyun.vod.file.keyid=
+aliyun.vod.file.keysecret=
+aliyun.oss.file.bucketname=
+
+# nacos address
+spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848

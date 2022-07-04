@@ -1,0 +1,39 @@
+#port
+server.port=8001
+
+#application name for spring cloud
+spring.application.name=service-edu
+
+#profiles: dev, test, prod
+spring.profiles.active=dev
+
+# mysql database
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/guli?serverTimezone=GMT%2B8
+spring.datasource.username=
+spring.datasource.password=
+
+# time config (use Beijing Time for now)
+spring.jackson.date-format=yyyy-MM-dd HH:mm:ss
+spring.jackson.time-zone=GMT+8
+
+#mybatis log (if commented out, meaning we now use logback
+#mybatis-plus.configuration.log-impl=org.apache.ibatis.logging.stdout.StdOutImpl
+
+# set logging level (default is INFO)
+#logging.level.root=INFO
+
+#mapper xml
+mybatis-plus.mapper-locations=classpath:com/atguigu/edu/mapper/xml/*.xml
+
+#nacos address
+spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
+
+#Enable hystrix
+feign.hystrix.enabled=true
+# set hystrix timeout, default is 1000ms
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=6000
+
+#Feign timeout set
+#feign.client.config.default.connectTimeout=160000000
+#feign.client.config.default.readTimeout=160000000
